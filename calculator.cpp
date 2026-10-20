@@ -15,7 +15,7 @@ double multiplyy(double a, double b){
 
 double dividee(double a, double b){
     if(b==0){
-        cout<<"Dividing with 0 is forbbiden.";
+        cout<<"Dividing with 0 is forbidden.";
         return 1;
     }
     return a/b;
