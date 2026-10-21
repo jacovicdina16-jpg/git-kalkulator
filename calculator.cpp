@@ -34,7 +34,7 @@ double moduloo(double a, double b){
 double power(double a, double b){
     return pow(a,b);
 }
-double swrtt(double a){
+double sqrtt(double a){
     return sqrt(a);
 }
 int main(){
