@@ -23,13 +23,16 @@ double dividee(double a, double b){
 }
 double moduloo(double a, double b){
     if(b==0){
-        cout<<"Finding modul od 0 iz not a number.";
+        cout<<"Finding modul from 0 is not a number.";
         return 0;
     }
     return fmod(a,b);
 }
 double power(double a, double b){
     return pow(a,b);
+}
+double swrtt(double a){
+    return sqrt(a);
 }
 int main(){
     double a,b;
@@ -42,4 +45,5 @@ int main(){
     cout<<endl<<"Multiply -> "<<multiplyy(a,b);
     cout<<endl<<"Divide -> "<<dividee(a,b) <<"\t Remainder -> "<<moduloo(a,b);
     cout<<endl<<"Power -> "<<power(a,b);
+    cout<<endl<<"Sqrt -> "<<sqrtt(a);
 }
