@@ -1,16 +1,18 @@
 name: CI
+
 on:
-push:
-branches:[main]
-pull_request:
-branches:[main]
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
 jobs:
-build:
-runs-on: ubuntu-latest
-steps:
-- name: Prenesi kod
-uses: actions/checkout@v4
-- name: Kompajliraj
-run: g++ calculator.cpp -o calculator
-- name: Pokreni program
-run: echo "7 3" | ./calculator
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prenesi kod
+        uses: actions/checkout@v4
+      -name: Kompajliraj
+        run: g++ calculator.cpp -o calclator
+      - name: Pokreni program
+        run: echo "7 3" | ./calculator
