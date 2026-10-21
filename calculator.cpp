@@ -24,7 +24,9 @@ double dividee(double a, double b){
 double moduloo(double a, double b){
     return fmod(a,b);
 }
-
+double power(double a, double b){
+    return pow(a,b);
+}
 int main(){
     double a,b;
     cout<<"Unesite broj -> ";
@@ -35,4 +37,5 @@ int main(){
     cout<<endl<<"Minus -> "<<minuss(a,b);
     cout<<endl<<"Multiply -> "<<multiplyy(a,b);
     cout<<endl<<"Divide -> "<<dividee(a,b) <<"\t Remainder -> "<<moduloo(a,b);
+    cout<<endl<<"Power -> "<<power(a,b);
 }
