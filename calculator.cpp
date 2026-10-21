@@ -22,6 +22,8 @@ double dividee(double a, double b){
     return a/b;
 }
 double moduloo(double a, double b){
+    if(b==0)
+        return NAN;
     return fmod(a,b);
 }
 double power(double a, double b){
