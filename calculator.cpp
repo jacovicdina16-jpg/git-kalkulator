@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 double pluss(double a, double b){
@@ -20,6 +21,9 @@ double dividee(double a, double b){
     }
     return a/b;
 }
+double moduloo(double a, double b){
+    return fmod(a,b);
+}
 
 int main(){
     double a,b;
@@ -30,5 +34,5 @@ int main(){
     cout<<endl<<"Plus -> "<<pluss(a,b);
     cout<<endl<<"Minus -> "<<minuss(a,b);
     cout<<endl<<"Multiply -> "<<multiplyy(a,b);
-    cout<<endl<<"Divide -> "<<dividee(a,b);
+    cout<<endl<<"Divide -> "<<dividee(a,b) <<"\t Remainder -> "<<moduloo(a,b);
 }
