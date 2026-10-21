@@ -22,6 +22,10 @@ double dividee(double a, double b){
     return a/b;
 }
 double moduloo(double a, double b){
+    if(b==0){
+        cout<<"Finding modul od 0 iz not a number.";
+        return 0;
+    }
     return fmod(a,b);
 }
 double power(double a, double b){
