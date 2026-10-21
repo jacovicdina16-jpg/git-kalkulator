@@ -1,1 +1,8 @@
 calculator
+.env
+*.o
+*.exe
+*.out
+.vscode/
+.idea/
+cmake-build-*/
